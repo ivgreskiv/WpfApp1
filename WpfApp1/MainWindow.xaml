@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="598" Width="1125.3">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="247*"/>
+            <ColumnDefinition Width="870*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button1" Content="Подключиться к БД" HorizontalAlignment="Left" Margin="10,537,0,0" VerticalAlignment="Top" Width="227" AutomationProperties.Name="button1" Click="button1_Click" Height="20"/>
+        <GroupBox Header="Главное Меню" HorizontalAlignment="Left" Height="532" Margin="10,0,0,0" VerticalAlignment="Top" Width="227">
+            <TreeView HorizontalAlignment="Left" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="190" BorderBrush="White">
+                <TreeViewItem Header="Обзор">
+                    <TreeViewItem Header="Просмотр 1-го IMG"/>
+                    <TreeViewItem Header="Просмотр базы IMG"/>
+                    <TreeViewItem Header="Просмотр анализа"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Анализ">
+                    <TreeViewItem Header="Обучение"/>
+                    <TreeViewItem Header="Анализ"/>
+                    <TreeViewItem Header="Выбор лучшего"/>
+                </TreeViewItem>
+            </TreeView>
+        </GroupBox>
+    </Grid>
+
+
+</Window>
