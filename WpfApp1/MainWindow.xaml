@@ -11,21 +11,19 @@
             <ColumnDefinition Width="247*"/>
             <ColumnDefinition Width="870*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button1" Content="Подключиться к БД" HorizontalAlignment="Left" Margin="10,537,0,0" VerticalAlignment="Top" Width="227" AutomationProperties.Name="button1" Click="button1_Click" Height="20"/>
-        <GroupBox Header="Главное Меню" HorizontalAlignment="Left" Height="532" Margin="10,0,0,0" VerticalAlignment="Top" Width="227">
-            <TreeView HorizontalAlignment="Left" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="190" BorderBrush="White">
-                <TreeViewItem Header="Обзор">
-                    <TreeViewItem Header="Просмотр 1-го IMG"/>
-                    <TreeViewItem Header="Просмотр базы IMG"/>
-                    <TreeViewItem Header="Просмотр анализа"/>
-                </TreeViewItem>
-                <TreeViewItem Header="Анализ">
-                    <TreeViewItem Header="Обучение"/>
-                    <TreeViewItem Header="Анализ"/>
-                    <TreeViewItem Header="Выбор лучшего"/>
-                </TreeViewItem>
-            </TreeView>
-        </GroupBox>
+        <TabControl Grid.ColumnSpan="2" Margin="0,0,10,0">
+            <TabItem Header="Main Functions">
+                <Grid Background="#FFE5E5E5">
+                    <Image x:Name="imageCont" HorizontalAlignment="Left" Height="490" Margin="10,39,0,0" VerticalAlignment="Top" Width="1081"/>
+                    <Label  Content="Link" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="linkImg" HorizontalAlignment="Left" Height="23" Margin="46,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="872"/>
+                    <Button Content="Load" HorizontalAlignment="Left" Margin="923,10,0,0" VerticalAlignment="Top" Width="168" Height="23" Click="Button_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Analyze">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
     </Grid>
 
 

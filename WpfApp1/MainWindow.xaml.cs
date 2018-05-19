@@ -27,9 +27,6 @@ namespace WpfApp1
             
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            button1.Content = "Text";
-        }
+        private void Button_Click(object sender, RoutedEventArgs e) => imageCont.Resources = linkImg.Text;
     }
 }
